@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minha The Little Fairy ✨</title>
+<meta name="description" content="A little universe for Samiya Zannat Minha.">
+<meta name="theme-color" content="#0b0507">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+<!--
+  PHOTOS: all photos live in /images. To swap one, overwrite the file (keep the name)
+  or change the src below. Photos used: minha1 … minha5 (.webp). Any <img data-lb> opens in the lightbox.
+-->
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#hero">Minha ✨</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <nav><ul id="menu">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About Her</a></li>
+    <li><a href="#dream">Dream</a></li>
+    <li><a href="#loves">Favorites</a></li>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#words">My Words</a></li>
+    <li><a href="#score">Love Score</a></li>
+  </ul></nav>
+</header>
+
+<main>
+<!-- HERO · photo: minha4 -->
+<section class="hero" id="hero">
+  <div class="hero-bg"><img src="images/minha4.webp" alt="" fetchpriority="high"></div>
+  <div class="leak l1"></div><div class="leak l2"></div>
+  <div class="hero-in">
+    <h1 class="hero-title">Minha</h1>
+    <p class="sub">The Little Fairy ✨</p>
+    <p class="full">Samiya Zannat Minha</p>
+    <blockquote class="quote">“Some people are beautiful.<br>Some people make the world feel more beautiful.”</blockquote>
+    <p class="soft">This little universe is for someone who makes ordinary moments feel magical.</p>
+    <button class="btn" id="enter">Enter Her Little Universe ✨</button>
+  </div>
+</section>
+
+<!-- NAMES -->
+<section class="sec" id="names">
+  <div class="wrap center">
+    <h2 class="rv">The Many Little Names of Her</h2>
+    <div class="glass real rv"><h3>Samiya Zannat Minha</h3><p>Her real name.</p></div>
+    <!-- NICKNAMES: edit / add cards here -->
+    <div class="nicks">
+      <div class="glass nick rv" style="--d:.1s"><span>Minha</span></div>
+      <div class="glass nick rv" style="--d:.25s"><span>Mina</span></div>
+      <div class="glass nick rv" style="--d:.4s"><span>Minu</span></div>
+    </div>
+    <p class="lead rv">Different names, the same beautiful soul.</p>
+  </div>
+</section>
+
+<!-- ABOUT · photo: minha1 -->
+<section class="sec" id="about">
+  <div class="wrap split">
+    <figure class="ph tall rv"><img src="images/minha1.webp" alt="Minha in a purple saree among kash flowers" data-lb loading="lazy"></figure>
+    <div class="txt rv">
+      <h2>A Little About Her</h2>
+      <p>She is Samiya Zannat Minha, but to the people who love her, she is Minha, Mina, Minu… a collection of little names carrying countless little memories.</p>
+      <p>She has dreams in her eyes, stories in her heart, and a quiet kind of beauty that doesn’t need to ask for attention.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DREAM · photo: minha2 -->
+<section class="sec dream" id="dream">
+  <div class="wrap split rev">
+    <div class="txt rv">
+      <svg class="steth" viewBox="0 0 100 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 6v26a16 16 0 0 0 32 0V6M38 48v8a17 17 0 0 0 34 0v-6"/><circle cx="72" cy="42" r="7"/><circle cx="22" cy="6" r="2"/><circle cx="54" cy="6" r="2"/></svg>
+      <h2>Her Dream ✨</h2>
+      <p class="big">One day, she wants to become a Doctor.</p>
+      <p>A dream that carries more than a profession.<br>A dream of learning, healing, caring and becoming someone who can make a difference.</p>
+    </div>
+    <figure class="ph rv"><img src="images/minha2.webp" alt="Minha beside an old banyan tree" data-lb loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- PLACES · photo: minha5 (parallax band). Kashmir card: add your own photo via --kashmir in style.css -->
+<section class="sec" id="places">
+  <div class="wrap">
+    <h2 class="center rv">Places That Feel Like Her</h2>
+    <div class="places">
+      <button class="glass place rv" type="button"><b>🏔️</b><h3>Mountains</h3><p>Quiet heights, and the feeling of being small in the best way.</p></button>
+      <button class="glass place rv" type="button" style="--d:.15s"><b>🌊</b><h3>Sea Beach</h3><p>Open horizons, soft waves, and nothing to hurry for.</p></button>
+      <button class="glass place rv" type="button" style="--d:.3s"><b>🏞️</b><h3>Kashmir</h3><p>The one she loves most.</p></button>
+    </div>
+    <div class="kashmir rv">
+      <div class="k-bg" data-par="0.08"></div>
+      <div class="k-in"><p class="tag">Her favorite place</p><h3>Kashmir — Her Favorite Place</h3>
+      <p>Maybe she loves Kashmir because some places simply look like the dreams we keep inside our hearts.</p></div>
+    </div>
+  </div>
+  <figure class="band rv"><img src="images/minha5.webp" alt="Minha sitting in a field of kash flowers" data-lb data-par="0.12" loading="lazy"></figure>
+</section>
+
+<!-- LITTLE THINGS · photo: minha3 -->
+<section class="sec" id="loves">
+  <div class="wrap split">
+    <figure class="ph rv"><img src="images/minha3.webp" alt="Minha holding red flowers" data-lb loading="lazy"></figure>
+    <div class="txt rv"><h2>Little Things She Loves</h2><p>The small details that make her who she is.</p></div>
+  </div>
+  <!-- FAVORITE THINGS: edit / add cards here -->
+  <div class="wrap cards">
+    <article class="glass card rv"><b>🍵</b><h3>Tea</h3><p>Her favorite drink.</p></article>
+    <article class="glass card rv" style="--d:.1s"><b>🌹</b><h3>White Rose</h3><p>Simple, pure and quietly beautiful.</p></article>
+    <article class="glass card rv" style="--d:.2s"><b>🍫</b><h3>Dark Chocolate</h3><p>Rich, a little bittersweet, never ordinary.</p></article>
+    <article class="glass card rv" style="--d:.3s"><b>👗</b><h3>Saree</h3><p>There is something effortlessly graceful about her love for sarees.</p></article>
+    <article class="glass card rv" style="--d:.4s"><b>📖</b><h3>Bangla Novels, Stories &amp; Books</h3><p>She loves getting lost between pages, stories and fictional worlds.</p></article>
+  </div>
+</section>
+
+<!-- MUSIC -->
+<section class="sec" id="music">
+  <div class="wrap center">
+    <h2 class="rv">Songs That Remind Me of Her 🎧</h2>
+    <div class="songs">
+      <!-- SONGS: change title, artist, link -->
+      <article class="glass song rv">
+        <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <h3>Tomar Amar</h3><p>Tahsan</p>
+        <a class="btn sm" href="https://youtu.be/VdTSv6u6iP0?si=VZiWaxgiDmPE0Kfz" target="_blank" rel="noopener noreferrer">Play on YouTube</a>
+      </article>
+      <article class="glass song rv" style="--d:.15s">
+        <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <h3>Eto Ta Bhalobashi</h3><p>Recall</p>
+        <a class="btn sm" href="https://youtu.be/g-_BSIfDKf8?si=Y3RF1wFHQmzZoz_P" target="_blank" rel="noopener noreferrer">Play on YouTube</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SPECIAL -->
+<section class="sec special" id="special">
+  <div class="wrap narrow center">
+    <h2 class="rv">Why She Is Special</h2>
+    <p class="rv">Among all the beautiful creations of Allah, Minha feels like one of those little reminders that beauty can exist in many forms.</p>
+    <p class="rv">Not just in the way she looks, but in the way she dreams, the things she loves, the stories she reads, and the little details that make her who she is.</p>
+    <p class="lead rv">She is not simply someone I admire. She is someone my heart has quietly chosen to love.</p>
+  </div>
+</section>
+
+<!-- WHAT SHE MEANS -->
+<section class="sec means" id="words">
+  <div class="wrap narrow center">
+    <h2 class="rv">What She Means To Me</h2>
+    <p class="pair rv">Redwan Rifat <span class="hb">❤️</span> Minha</p>
+    <p class="rv">I don’t know if words can ever completely explain how much you mean to me.</p>
+    <p class="rv">I love the little things about you.<br>The things you love.<br>The dreams you carry.<br>The way you see the world.<br>Even the little names people call you feel special to me because somehow, every version of you has become precious.</p>
+    <p class="rv">I don’t want to love you only in the beautiful moments.<br>I want to appreciate you in the ordinary ones too.</p>
+    <p class="final rv">If I could choose one beautiful thing to keep in my life forever, I would choose the feeling of loving you.</p>
+  </div>
+</section>
+
+<!-- TWO HEARTS · photos: minha2, minha4, minha1 (polaroids) -->
+<section class="sec" id="two">
+  <div class="wrap center">
+    <h2 class="rv">Two Hearts</h2>
+    <div class="polas">
+      <figure class="pola rv" style="--r:-4deg"><img src="images/minha2.webp" alt="Minha" data-lb loading="lazy"><figcaption>little moments</figcaption></figure>
+      <figure class="pola rv" style="--r:2deg;--d:.15s"><img src="images/minha4.webp" alt="Minha with her hair in the wind" data-lb loading="lazy"><figcaption>quiet magic</figcaption></figure>
+      <figure class="pola rv" style="--r:-2deg;--d:.3s"><img src="images/minha1.webp" alt="Minha standing in kash grass" data-lb loading="lazy"><figcaption>my favorite chapter</figcaption></figure>
+    </div>
+    <div class="narrow">
+      <p class="rv">Maybe the most beautiful part isn’t simply that I love her…</p>
+      <p class="rv">…it’s knowing that somewhere between all the conversations, memories and little moments, our hearts found a way to choose each other.</p>
+      <p class="lead rv">Two people.<br>Two hearts.<br>One beautiful feeling.</p>
+      <p class="pair rv">Redwan Rifat <span class="hb">❤️</span> Samiya Zannat Minha</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOVE SCORE -->
+<section class="sec" id="score">
+  <div class="wrap center">
+    <button class="btn" id="scoreBtn">Check Our Love Score 💖</button>
+    <div class="glass result" id="scoreRes" hidden>
+      <p class="lbl">LOVE SCORE</p>
+      <div class="inf">∞</div>
+      <p class="infw">INFINITY</p>
+      <p class="lead">Because Rifat loves Minha for infinity. ♾️💖</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECRET · photo: minha5 -->
+<section class="sec end" id="secretSec">
+  <div class="wrap center">
+    <figure class="ph round rv"><img src="images/minha5.webp" alt="Minha, my favorite photo" data-lb loading="lazy"></figure>
+    <button class="btn" id="secretBtn">One Last Thing... ✨</button>
+  </div>
+</section>
+</main>
+
+<footer class="foot">Made with love by <span data-cfg="creator">Redwan Rifat</span> · for <span data-cfg="fullName">Samiya Zannat Minha</span></footer>
+
+<!-- SECRET OVERLAY -->
+<div class="overlay" id="secret" role="dialog" aria-modal="true" aria-hidden="true" aria-label="A message for Minha">
+  <button class="x" data-close aria-label="Close">×</button>
+  <div class="msg"><p id="tw"></p><p class="theend" id="theEnd">The End?<br><em>Maybe not...</em></p></div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="overlay lb" id="lb" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Photo viewer">
+  <button class="x" data-close aria-label="Close">×</button>
+  <button class="nv p" id="lbP" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="">
+  <button class="nv n" id="lbN" aria-label="Next">›</button>
+</div>
+
+<!-- MUSIC BUTTON: add your own legal audio at audio/favorite-song.mp3 -->
+<button class="mbtn" id="mbtn" aria-label="Play music" title="Play / pause"><span class="bars"><i></i><i></i><i></i></span></button>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
